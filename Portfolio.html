@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ali Raza Portfolio</title>
+    <link rel="stylesheet" href="don.css">
+</head>
+<body>
+
+    <!-- 🔲 Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Ali Raza</div>
+            <ul class="nav-links">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+       
+
+    </header>
+ </div>
+        <section class="gallery">
+    <div class="image"><img src="images/pic1.jpg" alt="Image 1" onclick="openLightbox(this)"/></div>
+    <div class="image"><img src="images/pic2.jpg" alt="Image 2" onclick="openLightbox(this)" /></div>
+    <div class="image"><img src="images/pic3.jpg" alt="Image 3" onclick="openLightbox(this)"/></div>
+    <div class="image"><img src="images/pic4.jpg" alt="Image 4" onclick="openLightbox(this)"/></div>
+    <div class="image"><img src="images/pic5.jpg" alt="Image 5" onclick="openLightbox(this)"/></div>
+    <div class="image"><img src="images/pic6.jpg" alt="Image 6" onclick="openLightbox(this)"/></div>
+    <div class="image"><img src="images/pic7.jpg" alt="Image 7" onclick="openLightbox(this)"/></div>
+    <div class="image"><img src="images/pic8.png" alt="Image 8" onclick="openLightbox(this)"/></div>
+    <div class="image"><img src="images/pic9.jpg" alt="Image 9" onclick="openLightbox(this)"/></div>
+    <div class="image"><img src="images/pic10.jpg" alt="Image 10" onclick="openLightbox(this)"/></div>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Ali Raza | All rights reserved.</p>
+  </footer>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="" alt="Zoomed Image">
+</div>
+<script>
+  function openLightbox(img) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    lightboxImg.src = img.src;
+    lightbox.style.display = "flex";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+
+</body>
+</html>

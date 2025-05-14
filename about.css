@@ -1,0 +1,94 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/don.jpg') no-repeat center center/cover;
+    height: 100vh;
+    line-height: 1.6;
+
+}
+
+/* 🔲 Navbar */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+     
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 35px;
+    height: 70px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a.active {
+    color: limegreen;
+}
+
+.nav-links a:hover {
+    color: limegreen;
+    transform: scale(1.1);
+}
+/* About Section Styling */
+.about {
+  padding: 80px 20px;
+  background-color: #111; /* Dark background */
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 48px;
+  color: #00ffff; /* Neon Cyan */
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about p {
+  font-size: 24px;
+  color: #ffffff;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about {
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  text-align: center;
+  border-radius: 20px; /* Rounded corners for smooth look */
+  margin: 50px auto;
+  width: 80%; /* Smaller width to reduce background area */
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4); /* Optional glow */
+}
+

@@ -1,0 +1,66 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ali Raza |Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+</head>
+<body>
+
+    <!-- 🔲 Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Ali Raza</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="portfolio.html" >Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+    
+
+<div class="hero-content">
+  <div class="design-text">
+    <h3 class="love-text">I Love</h3>
+    <h2 class="design-heading">Graphic Designing</h2>
+  </div>
+
+  <!-- Button ko yahan neeche rakhna hai -->
+  <div class="button-container">
+    <a href="portfolio.html">
+    <button class="magic-button">
+      <span>Portfolio</span>
+    </button>
+     </a>
+  </div>
+</div>
+<div class="scroll-message" id="scrollMessage">
+    <p><strong>Neeche kya dekh rahe ho?</strong> Portfolio dekho.😎</p>
+  </div>
+
+  <!-- JavaScript Scroll Code -->
+  <script>
+    const scrollMessage = document.getElementById("scrollMessage");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        scrollMessage.style.opacity = "1";
+      } else {
+        scrollMessage.style.opacity = "0";
+      }
+    });
+  </script>
+  <div style="height: 333px;"></div>
+
+
+</body>
+</html>
